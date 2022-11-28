@@ -5,23 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="shortcut icon"
-    href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
-    type="image/x-icon"
-  />
-    <title>Calculator in 8 lines </title>
+      rel="shortcut icon"
+      href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator in 8 lines</title>
   </head>
   <body>
-    <h1>Calculator</h1>
-    <input type="number" placeholder="type your number" id="num1" />
-    <input type="number" placeholder="type your number" id="num2" />
-    <input type="text" placeholder="type your oprater" id="op" />
-    <button value="result" id="btn" onclick="calculator()">result</button>
+    <div>
+      <h1>Calculator</h1>
+      <input type="number" placeholder="type your number" id="num1"  value="10" required/>
+      <input type="number" placeholder="type your number" id="num2"  value="10" required/>
+      <input type="text" placeholder="type your oprater" id="op" value="+"  required/>
+      <button value="result" id="btn" onclick="calculator()">result</button>
+    </div>
   </body>
 </html>
 <script>
   function calculator() {
-    document.getElementById("btn").innerHTML = eval(document.getElementById("num1").value +  document.getElementById("op").value +  document.getElementById("num2").value
+    document.getElementById("btn").innerHTML = eval(
+      document.getElementById("num1").value +
+        document.getElementById("op").value +
+        document.getElementById("num2").value
     );
   }
+  calculator()
 </script>
