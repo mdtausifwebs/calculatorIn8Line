@@ -19,7 +19,7 @@ h1 {
   background-color: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
 }
 div {
-  /* border-radius: 1rem; */
+  border-radius: 1rem;
   width: 50%;
   border: 1px solid black;
   display: flex;
@@ -37,9 +37,11 @@ input {
   width: 50%;
   padding: 1rem;
   font-size: 2rem;
+  border-radius: 1rem;
   background: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
 }
 button {
+  border-radius: 1rem;
   border: none;
   margin: 0.1rem;
   width: 100%;
