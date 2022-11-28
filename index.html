@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <input type="number" placeholder="type your number" id="num1" />
+    <input type="number" placeholder="type your number" id="num2" />
+    <input type="text" placeholder="type your oprater" id="op" />
+    <button value="result" id="btn" onclick="calculator()">result</button>
+  </body>
+</html>
+<script>
+  function calculator() {
+    document.getElementById("btn").innerHTML = eval(document.getElementById("num1").value +  document.getElementById("op").value +  document.getElementById("num2").value
+    );
+  }
+</script>
