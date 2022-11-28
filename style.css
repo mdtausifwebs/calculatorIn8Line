@@ -12,13 +12,14 @@ body {
   padding: 5rem;
 }
 h1 {
-  font-size: 3rem;
-  padding: 1rem;
+  width: 50%;
+  font-size: 2rem;
+  /* padding: 1rem; */
   color: #D6A3D6;
   background-color: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
 }
 div {
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   width: 50%;
   border: 1px solid black;
   display: flex;
